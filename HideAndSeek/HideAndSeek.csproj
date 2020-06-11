@@ -52,70 +52,70 @@
     <Compile Include="Model\History.cs" />
     <Compile Include="Model\Player.cs" />
     <Compile Include="Model\Seeker.cs" />
-    <Compile Include="Views\CamerasForm.cs">
+    <Compile Include="Views\Seeker\CamerasForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CamerasForm.Designer.cs">
+    <Compile Include="Views\Seeker\CamerasForm.Designer.cs">
       <DependentUpon>CamerasForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HiderInloopkast.cs">
+    <Compile Include="Views\Hider\HiderInloopkast.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\HiderInloopkast.Designer.cs">
+    <Compile Include="Views\Hider\HiderInloopkast.Designer.cs">
       <DependentUpon>HiderInloopkast.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HiderKeuken.cs">
+    <Compile Include="Views\Hider\HiderKeuken.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\HiderKeuken.Designer.cs">
+    <Compile Include="Views\Hider\HiderKeuken.Designer.cs">
       <DependentUpon>HiderKeuken.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HiderSlaapkamer.cs">
+    <Compile Include="Views\Hider\HiderSlaapkamer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\HiderSlaapkamer.Designer.cs">
+    <Compile Include="Views\Hider\HiderSlaapkamer.Designer.cs">
       <DependentUpon>HiderSlaapkamer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HiderUHal.cs">
+    <Compile Include="Views\Hider\HiderUHal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\HiderUHal.Designer.cs">
+    <Compile Include="Views\Hider\HiderUHal.Designer.cs">
       <DependentUpon>HiderUHal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HiderWoonMiddle.cs">
+    <Compile Include="Views\Hider\HiderWoonMiddle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\HiderWoonMiddle.Designer.cs">
+    <Compile Include="Views\Hider\HiderWoonMiddle.Designer.cs">
       <DependentUpon>HiderWoonMiddle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HiderWoonNorth.cs">
+    <Compile Include="Views\Hider\HiderWoonNorth.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\HiderWoonNorth.Designer.cs">
+    <Compile Include="Views\Hider\HiderWoonNorth.Designer.cs">
       <DependentUpon>HiderWoonNorth.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HiderWoonSouth.cs">
+    <Compile Include="Views\Hider\HiderWoonSouth.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\HiderWoonSouth.Designer.cs">
+    <Compile Include="Views\Hider\HiderWoonSouth.Designer.cs">
       <DependentUpon>HiderWoonSouth.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MapFormHider.cs">
+    <Compile Include="Views\Hider\MapFormHider.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MapFormHider.Designer.cs">
+    <Compile Include="Views\Hider\MapFormHider.Designer.cs">
       <DependentUpon>MapFormHider.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HiderPlayForm.cs">
+    <Compile Include="Views\Hider\HiderPlayForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\HiderPlayForm.Designer.cs">
+    <Compile Include="Views\Hider\HiderPlayForm.Designer.cs">
       <DependentUpon>HiderPlayForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\HiderMainForm.cs">
+    <Compile Include="Views\Hider\HiderMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\HiderMainForm.Designer.cs">
+    <Compile Include="Views\Hider\HiderMainForm.Designer.cs">
       <DependentUpon>HiderMainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\HistoryForm.cs">
@@ -124,16 +124,16 @@
     <Compile Include="Views\HistoryForm.Designer.cs">
       <DependentUpon>HistoryForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MapForm.cs">
+    <Compile Include="Views\Seeker\MapForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MapForm.Designer.cs">
+    <Compile Include="Views\Seeker\MapForm.Designer.cs">
       <DependentUpon>MapForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\SeekerMainForm.cs">
+    <Compile Include="Views\Seeker\SeekerMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\SeekerMainForm.Designer.cs">
+    <Compile Include="Views\Seeker\SeekerMainForm.Designer.cs">
       <DependentUpon>SeekerMainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\SettingsForm.cs">
@@ -156,43 +156,43 @@
     <Compile Include="Views\StatisticsForm.Designer.cs">
       <DependentUpon>StatisticsForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\CamerasForm.resx">
+    <EmbeddedResource Include="Views\Seeker\CamerasForm.resx">
       <DependentUpon>CamerasForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\HiderInloopkast.resx">
+    <EmbeddedResource Include="Views\Hider\HiderInloopkast.resx">
       <DependentUpon>HiderInloopkast.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\HiderKeuken.resx">
+    <EmbeddedResource Include="Views\Hider\HiderKeuken.resx">
       <DependentUpon>HiderKeuken.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\HiderMainForm.resx">
+    <EmbeddedResource Include="Views\Hider\HiderMainForm.resx">
       <DependentUpon>HiderMainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\HiderPlayForm.resx">
+    <EmbeddedResource Include="Views\Hider\HiderPlayForm.resx">
       <DependentUpon>HiderPlayForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\HiderSlaapkamer.resx">
+    <EmbeddedResource Include="Views\Hider\HiderSlaapkamer.resx">
       <DependentUpon>HiderSlaapkamer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\HiderUHal.resx">
+    <EmbeddedResource Include="Views\Hider\HiderUHal.resx">
       <DependentUpon>HiderUHal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\HiderWoonMiddle.resx">
+    <EmbeddedResource Include="Views\Hider\HiderWoonMiddle.resx">
       <DependentUpon>HiderWoonMiddle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\HiderWoonNorth.resx">
+    <EmbeddedResource Include="Views\Hider\HiderWoonNorth.resx">
       <DependentUpon>HiderWoonNorth.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\HiderWoonSouth.resx">
+    <EmbeddedResource Include="Views\Hider\HiderWoonSouth.resx">
       <DependentUpon>HiderWoonSouth.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\HistoryForm.resx">
       <DependentUpon>HistoryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MapForm.resx">
+    <EmbeddedResource Include="Views\Seeker\MapForm.resx">
       <DependentUpon>MapForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\SeekerMainForm.resx">
+    <EmbeddedResource Include="Views\Seeker\SeekerMainForm.resx">
       <DependentUpon>SeekerMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SettingsForm.resx">
@@ -213,6 +213,7 @@
     <EmbeddedResource Include="Views\StatisticsForm.resx">
       <DependentUpon>StatisticsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Images\floorplan" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -226,6 +227,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\floorplan.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
