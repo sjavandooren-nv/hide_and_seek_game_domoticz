@@ -27,8 +27,6 @@ namespace HideAndSeek
 
 		private void btnSeeker_Click(object sender, EventArgs e)
 		{
-			this.Hide();
-
 			SeekerMainForm form = new SeekerMainForm();
 			form.Closed += (s, args) => this.Close();
 			form.Show();
@@ -36,8 +34,6 @@ namespace HideAndSeek
 
 		private void btnHider_Click(object sender, EventArgs e)
 		{
-			this.Hide();
-
 			HiderMainForm form = new HiderMainForm();
 			form.Closed += (s, args) => this.Close();
 			form.Show();
