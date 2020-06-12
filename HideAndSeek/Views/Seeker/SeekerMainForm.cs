@@ -14,7 +14,7 @@ namespace HideAndSeek
 	public partial class SeekerMainForm : Form
 	{
 		private TimeSpan TimeLimit = new TimeSpan(0, 1, 0); // 1 min
-		private int PlayTime; //in Miliseconds
+		private int PlayTime = 0; //in Miliseconds
 
 		public SeekerMainForm()
 		{
@@ -24,29 +24,33 @@ namespace HideAndSeek
 		private void SeekerMainForm_Load(object sender, EventArgs e)
 		{
 			lblTimer.Text = string.Format("{0:D2}:{1:D2}.{2:D3}", TimeLimit.Minutes, TimeLimit.Seconds, TimeLimit.Milliseconds);
-			PlayTime = 0;
 		}
 
 		private void btnStartGame_Click(object sender, EventArgs e)
 		{
 			Timer.Start();
+			btnStartGame.Enabled = false;
+			btnCameras.Enabled = true;
+			btnShowFloorplan.Enabled = true;
 		}
 
 		private void btnShowFloorplan_Click(object sender, EventArgs e)
 		{
-			this.Hide();
+			this.Visible = false;
 
 			MapForm form = new MapForm();
-			form.Closed += (s, args) => this.Close();
+			form.Closed += (s, args) => this.Visible = true;
+			form.RemainingTime = TimeLimit - new TimeSpan(0, 0, 0, 0, PlayTime);
 			form.Show();
 		}
 
 		private void btnCameras_Click(object sender, EventArgs e)
 		{
-			this.Hide();
+			this.Visible = false;
 
 			CamerasForm form = new CamerasForm();
-			form.Closed += (s, args) => this.Close();
+			form.Closed += (s, args) => this.Visible = true;
+			//form.RemainingTime = TimeLimit - new TimeSpan(0, 0, 0, 0, PlayTime);
 			form.Show();
 		}
 

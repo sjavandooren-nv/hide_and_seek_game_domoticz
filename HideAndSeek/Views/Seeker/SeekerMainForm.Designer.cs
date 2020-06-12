@@ -43,19 +43,19 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(205, 44);
-			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.label1.Location = new System.Drawing.Point(273, 54);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(174, 13);
+			this.label1.Size = new System.Drawing.Size(232, 17);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "This is the main page of the Seeker";
 			// 
 			// btnShowFloorplan
 			// 
-			this.btnShowFloorplan.Location = new System.Drawing.Point(126, 205);
-			this.btnShowFloorplan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnShowFloorplan.Enabled = false;
+			this.btnShowFloorplan.Location = new System.Drawing.Point(168, 252);
+			this.btnShowFloorplan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btnShowFloorplan.Name = "btnShowFloorplan";
-			this.btnShowFloorplan.Size = new System.Drawing.Size(110, 107);
+			this.btnShowFloorplan.Size = new System.Drawing.Size(147, 132);
 			this.btnShowFloorplan.TabIndex = 1;
 			this.btnShowFloorplan.Text = "Map";
 			this.btnShowFloorplan.UseVisualStyleBackColor = true;
@@ -64,10 +64,10 @@
 			// btnSettings
 			// 
 			this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.btnSettings.Location = new System.Drawing.Point(9, 99);
-			this.btnSettings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnSettings.Location = new System.Drawing.Point(12, 122);
+			this.btnSettings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btnSettings.Name = "btnSettings";
-			this.btnSettings.Size = new System.Drawing.Size(56, 40);
+			this.btnSettings.Size = new System.Drawing.Size(75, 49);
 			this.btnSettings.TabIndex = 2;
 			this.btnSettings.Text = "Settings";
 			this.btnSettings.UseVisualStyleBackColor = true;
@@ -75,10 +75,10 @@
 			// 
 			// btnGameStats
 			// 
-			this.btnGameStats.Location = new System.Drawing.Point(9, 10);
-			this.btnGameStats.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnGameStats.Location = new System.Drawing.Point(12, 12);
+			this.btnGameStats.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btnGameStats.Name = "btnGameStats";
-			this.btnGameStats.Size = new System.Drawing.Size(56, 40);
+			this.btnGameStats.Size = new System.Drawing.Size(75, 49);
 			this.btnGameStats.TabIndex = 3;
 			this.btnGameStats.Text = "Game Statistics";
 			this.btnGameStats.UseVisualStyleBackColor = true;
@@ -86,10 +86,10 @@
 			// 
 			// btnStartGame
 			// 
-			this.btnStartGame.Location = new System.Drawing.Point(173, 90);
-			this.btnStartGame.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnStartGame.Location = new System.Drawing.Point(231, 111);
+			this.btnStartGame.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btnStartGame.Name = "btnStartGame";
-			this.btnStartGame.Size = new System.Drawing.Size(240, 73);
+			this.btnStartGame.Size = new System.Drawing.Size(320, 90);
 			this.btnStartGame.TabIndex = 4;
 			this.btnStartGame.Text = "Start Game";
 			this.btnStartGame.UseVisualStyleBackColor = true;
@@ -97,10 +97,11 @@
 			// 
 			// btnCameras
 			// 
-			this.btnCameras.Location = new System.Drawing.Point(362, 205);
-			this.btnCameras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnCameras.Enabled = false;
+			this.btnCameras.Location = new System.Drawing.Point(483, 252);
+			this.btnCameras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btnCameras.Name = "btnCameras";
-			this.btnCameras.Size = new System.Drawing.Size(110, 107);
+			this.btnCameras.Size = new System.Drawing.Size(147, 132);
 			this.btnCameras.TabIndex = 5;
 			this.btnCameras.Text = "Camera\'s";
 			this.btnCameras.UseVisualStyleBackColor = true;
@@ -108,10 +109,10 @@
 			// 
 			// btnGameHistory
 			// 
-			this.btnGameHistory.Location = new System.Drawing.Point(9, 54);
-			this.btnGameHistory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnGameHistory.Location = new System.Drawing.Point(12, 66);
+			this.btnGameHistory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btnGameHistory.Name = "btnGameHistory";
-			this.btnGameHistory.Size = new System.Drawing.Size(56, 40);
+			this.btnGameHistory.Size = new System.Drawing.Size(75, 49);
 			this.btnGameHistory.TabIndex = 6;
 			this.btnGameHistory.Text = "Game History";
 			this.btnGameHistory.UseVisualStyleBackColor = true;
@@ -121,10 +122,9 @@
 			// 
 			this.lblTimer.AutoSize = true;
 			this.lblTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTimer.Location = new System.Drawing.Point(421, 11);
-			this.lblTimer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.lblTimer.Location = new System.Drawing.Point(561, 14);
 			this.lblTimer.Name = "lblTimer";
-			this.lblTimer.Size = new System.Drawing.Size(168, 39);
+			this.lblTimer.Size = new System.Drawing.Size(205, 48);
 			this.lblTimer.TabIndex = 7;
 			this.lblTimer.Text = "00:00.000";
 			// 
@@ -135,9 +135,9 @@
 			// 
 			// SeekerMainForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(600, 366);
+			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.Controls.Add(this.lblTimer);
 			this.Controls.Add(this.btnGameHistory);
 			this.Controls.Add(this.btnCameras);
@@ -146,7 +146,7 @@
 			this.Controls.Add(this.btnSettings);
 			this.Controls.Add(this.btnShowFloorplan);
 			this.Controls.Add(this.label1);
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.Name = "SeekerMainForm";
 			this.Text = "SeekerMainForm";
 			this.Load += new System.EventHandler(this.SeekerMainForm_Load);

@@ -229,6 +229,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\floorplan.png" />
+    <Content Include="Images\keuken.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
