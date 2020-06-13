@@ -10,11 +10,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Net;
+using System.Threading;
 
 namespace HideAndSeek
 {
 	public partial class StartForm : Form
 	{
+		private Thread SeekerThread;
+		private Thread HiderThread;
+
 		public StartForm()
 		{
 			InitializeComponent();
@@ -27,17 +31,26 @@ namespace HideAndSeek
 
 		private void btnSeeker_Click(object sender, EventArgs e)
 		{
-			SeekerMainForm form = new SeekerMainForm();
-			form.Closed += (s, args) => this.Close();
-			form.Show();
+			SeekerThread = new Thread(StartSeeker);
+			SeekerThread.SetApartmentState(ApartmentState.STA);
+			SeekerThread.Start();
 		}
 
 		private void btnHider_Click(object sender, EventArgs e)
 		{
-			HiderMainForm form = new HiderMainForm();
-			form.Closed += (s, args) => this.Close();
-			form.Show();
+			HiderThread = new Thread(StartHider);
+			HiderThread.SetApartmentState(ApartmentState.STA);
+			HiderThread.Start();
+		}
+		
+		private void StartSeeker(object obj)
+		{
+			Application.Run(new SeekerMainForm());
+		}
 
+		private void StartHider(object obj)
+		{
+			Application.Run(new HiderMainForm());
 
 			HttpWebRequest request = WebRequest.Create("http://127.0.0.1:8080/json.htm?type=command&param=switchscene&idx=1&switchcmd=On") as HttpWebRequest;
 			HttpWebResponse response = request.GetResponse() as HttpWebResponse;

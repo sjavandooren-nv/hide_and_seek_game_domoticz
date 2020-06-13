@@ -30,7 +30,7 @@ namespace HideAndSeek
 		{
 			Timer.Start();
 			btnStartGame.Enabled = false;
-			btnCameras.Enabled = true;
+			//btnCameras.Enabled = true;
 			btnShowFloorplan.Enabled = true;
 		}
 

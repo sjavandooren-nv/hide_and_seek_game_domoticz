@@ -63,6 +63,7 @@
 			// 
 			// btnSettings
 			// 
+			this.btnSettings.Enabled = false;
 			this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.btnSettings.Location = new System.Drawing.Point(12, 122);
 			this.btnSettings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -75,6 +76,7 @@
 			// 
 			// btnGameStats
 			// 
+			this.btnGameStats.Enabled = false;
 			this.btnGameStats.Location = new System.Drawing.Point(12, 12);
 			this.btnGameStats.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btnGameStats.Name = "btnGameStats";
@@ -109,6 +111,7 @@
 			// 
 			// btnGameHistory
 			// 
+			this.btnGameHistory.Enabled = false;
 			this.btnGameHistory.Location = new System.Drawing.Point(12, 66);
 			this.btnGameHistory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btnGameHistory.Name = "btnGameHistory";
