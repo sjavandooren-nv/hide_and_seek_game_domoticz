@@ -31,8 +31,6 @@ namespace HideAndSeek.Views
             HttpWebResponse response = request.GetResponse() as HttpWebResponse;
             Stream stream = response.GetResponseStream();
             StreamReader reader = new StreamReader(stream);
-
-            timerKeuken.Stop();
         }
 
         private void btn_WoonNorth_Click(object sender, EventArgs e)
@@ -47,29 +45,6 @@ namespace HideAndSeek.Views
             HttpWebResponse response = request.GetResponse() as HttpWebResponse;
             Stream stream = response.GetResponseStream();
             StreamReader reader = new StreamReader(stream);
-
-            timerKeuken.Stop();
-        }
-
-        private void timerLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void timerKeuken_Tick(object sender, EventArgs e)
-        {
-            MyGlobals.timeKeuken++;
-            timerLabel.Text = MyGlobals.timeKeuken.ToString();
-        }
-
-        private void btnEndTurn_Click(object sender, EventArgs e)
-        {
-            MyGlobals.endLocationHider = 2;
-            this.Hide();
-
-            Hider.HiderEndForm form = new Hider.HiderEndForm();
-            form.Closed += (s, args) => this.Close();
-            form.Show();
         }
     }
 }

@@ -28,9 +28,11 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.btnSeeker = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.btnHider = new System.Windows.Forms.Button();
+			this.GlobalTimer = new System.Windows.Forms.Timer(this.components);
 			this.SuspendLayout();
 			// 
 			// btnSeeker
@@ -86,30 +88,7 @@
 		private System.Windows.Forms.Button btnSeeker;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button btnHider;
+		private System.Windows.Forms.Timer GlobalTimer;
 	}
 }
 
-public static class MyGlobals
-{
-
-	public static int timeInloopkast;
-	public static int timeKeuken;
-	public static int timeIngangshal;
-	public static int timeSlaapkamer;
-	public static int timeUHal;
-	public static int timeWoonNorth;
-	public static int timeWoonMiddle;
-	public static int timeWoonSouth;
-
-	// id for room that hider is in
-	// 0 = ingangshal
-	// 1 = inloopkast
-	// 2 = keuken
-	// 3 = slaapkamer
-	// 4 = uhal
-	// 5 = woonmiddle
-	// 6 = woonnorth
-	// 7 = woonsouth
-	public static int endLocationHider;
-
-}

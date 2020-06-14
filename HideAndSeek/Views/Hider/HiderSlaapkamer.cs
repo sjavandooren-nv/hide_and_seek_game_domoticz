@@ -14,7 +14,6 @@ namespace HideAndSeek.Views
 {
     public partial class HiderSlaapkamer : Form
     {
-
         public HiderSlaapkamer()
         {
             InitializeComponent();
@@ -37,8 +36,6 @@ namespace HideAndSeek.Views
             HttpWebResponse response = request.GetResponse() as HttpWebResponse;
             Stream stream = response.GetResponseStream();
             StreamReader reader = new StreamReader(stream);
-
-            timer1.Stop();
         }
 
         private void btn_WoonNorth_Click(object sender, EventArgs e)
@@ -53,24 +50,6 @@ namespace HideAndSeek.Views
             HttpWebResponse response = request.GetResponse() as HttpWebResponse;
             Stream stream = response.GetResponseStream();
             StreamReader reader = new StreamReader(stream);
-
-            timer1.Stop();
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            MyGlobals.timeSlaapkamer++;
-            timerLabel.Text = MyGlobals.timeSlaapkamer.ToString();
-        }
-
-        private void btnEndTurn_Click(object sender, EventArgs e)
-        {
-            MyGlobals.endLocationHider = 3;
-            this.Hide();
-
-            Hider.HiderEndForm form = new Hider.HiderEndForm();
-            form.Closed += (s, args) => this.Close();
-            form.Show();
         }
     }
 }
