@@ -19,10 +19,10 @@ namespace HideAndSeek.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+			this.Visible = false;
 
             HiderPlayForm form = new HiderPlayForm();
-            form.Closed += (s, args) => this.Close();
+            form.Closed += (s, args) => this.Visible = true;
             form.Show();
         }
 

@@ -48,7 +48,7 @@
 			// btnHiderPlay
 			// 
 			this.btnHiderPlay.Location = new System.Drawing.Point(329, 97);
-			this.btnHiderPlay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnHiderPlay.Margin = new System.Windows.Forms.Padding(4);
 			this.btnHiderPlay.Name = "btnHiderPlay";
 			this.btnHiderPlay.Size = new System.Drawing.Size(116, 28);
 			this.btnHiderPlay.TabIndex = 1;
@@ -58,8 +58,9 @@
 			// 
 			// btnFloorPlanHider
 			// 
+			this.btnFloorPlanHider.Enabled = false;
 			this.btnFloorPlanHider.Location = new System.Drawing.Point(329, 133);
-			this.btnFloorPlanHider.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnFloorPlanHider.Margin = new System.Windows.Forms.Padding(4);
 			this.btnFloorPlanHider.Name = "btnFloorPlanHider";
 			this.btnFloorPlanHider.Size = new System.Drawing.Size(116, 28);
 			this.btnFloorPlanHider.TabIndex = 2;
@@ -69,8 +70,9 @@
 			// 
 			// btnGameHistory
 			// 
+			this.btnGameHistory.Enabled = false;
 			this.btnGameHistory.Location = new System.Drawing.Point(329, 238);
-			this.btnGameHistory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnGameHistory.Margin = new System.Windows.Forms.Padding(4);
 			this.btnGameHistory.Name = "btnGameHistory";
 			this.btnGameHistory.Size = new System.Drawing.Size(116, 28);
 			this.btnGameHistory.TabIndex = 3;
@@ -80,8 +82,9 @@
 			// 
 			// btnShowStats
 			// 
+			this.btnShowStats.Enabled = false;
 			this.btnShowStats.Location = new System.Drawing.Point(329, 273);
-			this.btnShowStats.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnShowStats.Margin = new System.Windows.Forms.Padding(4);
 			this.btnShowStats.Name = "btnShowStats";
 			this.btnShowStats.Size = new System.Drawing.Size(116, 28);
 			this.btnShowStats.TabIndex = 4;
@@ -91,7 +94,7 @@
 			// btnExit
 			// 
 			this.btnExit.Location = new System.Drawing.Point(668, 407);
-			this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnExit.Margin = new System.Windows.Forms.Padding(4);
 			this.btnExit.Name = "btnExit";
 			this.btnExit.Size = new System.Drawing.Size(116, 28);
 			this.btnExit.TabIndex = 5;

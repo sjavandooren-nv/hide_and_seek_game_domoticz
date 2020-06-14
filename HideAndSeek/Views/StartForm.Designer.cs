@@ -28,9 +28,11 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.btnSeeker = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.btnHider = new System.Windows.Forms.Button();
+			this.GlobalTimer = new System.Windows.Forms.Timer(this.components);
 			this.SuspendLayout();
 			// 
 			// btnSeeker
@@ -86,6 +88,7 @@
 		private System.Windows.Forms.Button btnSeeker;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button btnHider;
+		private System.Windows.Forms.Timer GlobalTimer;
 	}
 }
 
