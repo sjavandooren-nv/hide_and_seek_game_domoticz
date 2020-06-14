@@ -12,6 +12,7 @@ namespace HideAndSeek.Views
 {
 	public partial class HiderMainForm : Form
 	{
+
 		public HiderMainForm()
 		{
 			InitializeComponent();
@@ -19,10 +20,10 @@ namespace HideAndSeek.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-			this.Visible = false;
+            this.Hide();
 
             HiderPlayForm form = new HiderPlayForm();
-            form.Closed += (s, args) => this.Visible = true;
+            form.Closed += (s, args) => this.Close();
             form.Show();
         }
 
@@ -41,5 +42,6 @@ namespace HideAndSeek.Views
 		{
 
 		}
-	}
+
+    }
 }

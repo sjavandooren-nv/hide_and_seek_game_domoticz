@@ -16,8 +16,6 @@ namespace HideAndSeek.Views
 	{
 		public TimeSpan RemainingTime { get; set; }
 		private int PlayTime = 0;
-		public delegate void myDataChangedDelegate(object sender, EventArgs args);
-		public event myDataChangedDelegate SeekerWon; 
 
 		public MapForm()
 		{
@@ -37,27 +35,7 @@ namespace HideAndSeek.Views
 
 		private void btnChoose_Click(object sender, EventArgs e)
 		{
-			bool HidingSpotCheck = true;
-
-			if (HidingSpotCheck)
-			{
-				Win();
-			}
-			else if (!HidingSpotCheck)
-			{
-				MessageBox.Show("This was not the hiding spot :( \n Try again!");
-			}
-			else
-			{
-				MessageBox.Show("Error: Something went wrong");
-			}
-		}
-
-		public void Win()
-		{
-			SeekerWon(this, null);
-			Timer.Stop();
-			MessageBox.Show("This is the hiding spot! \n Congratulations. You Won!");
+			MessageBox.Show("Room Chosen");
 		}
 
 		private void btnLivingRoomMiddle_Click(object sender, EventArgs e)

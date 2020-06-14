@@ -73,3 +73,4 @@ C:\Users\Bas\Desktop\b2\hide_and_seek_game_domoticz-master\HideAndSeek\obj\Debug
 C:\Users\Bas\Desktop\b2\hide_and_seek_game_domoticz-master\HideAndSeek\obj\Debug\HideAndSeek.csproj.CoreCompileInputs.cache
 C:\Users\Bas\Desktop\b2\hide_and_seek_game_domoticz-master\HideAndSeek\obj\Debug\HideAndSeek.exe
 C:\Users\Bas\Desktop\b2\hide_and_seek_game_domoticz-master\HideAndSeek\obj\Debug\HideAndSeek.pdb
+C:\Users\Bas\Desktop\b2\hide_and_seek_game_domoticz-master\HideAndSeek\obj\Debug\HideAndSeek.Views.Hider.HiderEndForm.resources
