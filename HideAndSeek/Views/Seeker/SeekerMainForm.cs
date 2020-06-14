@@ -15,12 +15,10 @@ namespace HideAndSeek
 	{
 		private TimeSpan TimeLimit = new TimeSpan(0, 1, 0); // 1 min
 		private int PlayTime = 0; //in Miliseconds
-		private Timer GlobalTimer;
 
-		public SeekerMainForm(Timer timer)
+		public SeekerMainForm()
 		{
 			InitializeComponent();
-			GlobalTimer = timer;
 		}
 
 		private void SeekerMainForm_Load(object sender, EventArgs e)
@@ -43,7 +41,6 @@ namespace HideAndSeek
 			MapForm form = new MapForm();
 			form.Closed += (s, args) => this.Visible = true;
 			form.RemainingTime = TimeLimit - new TimeSpan(0, 0, 0, 0, PlayTime);
-			form.SeekerWon += (s, args) => Timer.Stop();
 			form.Show();
 		}
 
@@ -94,8 +91,7 @@ namespace HideAndSeek
 			if ((Convert.ToInt32(TimeLimit.TotalMilliseconds) - PlayTime) <= 0)
 			{
 				Timer.Stop();
-				MessageBox.Show("Time is up! \n You lost");
-				this.Close();
+				MessageBox.Show("Time is up!");
 			}
 		}
 	}

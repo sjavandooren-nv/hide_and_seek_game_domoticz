@@ -45,7 +45,7 @@ namespace HideAndSeek
 		
 		private void StartSeeker(object obj)
 		{
-			Application.Run(new SeekerMainForm(GlobalTimer));
+			Application.Run(new SeekerMainForm());
 		}
 
 		private void StartHider(object obj)

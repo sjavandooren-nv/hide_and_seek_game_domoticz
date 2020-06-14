@@ -28,11 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_North = new System.Windows.Forms.Button();
             this.btnSouth = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnEndTurn = new System.Windows.Forms.Button();
+            this.timer_ingang = new System.Windows.Forms.Timer(this.components);
+            this.timerLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,11 +88,37 @@
             this.btnEndTurn.UseVisualStyleBackColor = true;
             this.btnEndTurn.Click += new System.EventHandler(this.btnEndTurn_Click);
             // 
+            // timer_ingang
+            // 
+            this.timer_ingang.Enabled = true;
+            this.timer_ingang.Interval = 1000;
+            this.timer_ingang.Tick += new System.EventHandler(this.timer_ingang_Tick);
+            // 
+            // timerLabel
+            // 
+            this.timerLabel.AutoSize = true;
+            this.timerLabel.Location = new System.Drawing.Point(689, 388);
+            this.timerLabel.Name = "timerLabel";
+            this.timerLabel.Size = new System.Drawing.Size(0, 13);
+            this.timerLabel.TabIndex = 5;
+            this.timerLabel.Click += new System.EventHandler(this.timerLabel_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(621, 388);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Time spent:";
+            // 
             // HiderPlayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.timerLabel);
             this.Controls.Add(this.btnEndTurn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -109,5 +139,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnEndTurn;
+        private System.Windows.Forms.Timer timer_ingang;
+        private System.Windows.Forms.Label timerLabel;
+        private System.Windows.Forms.Label label2;
     }
 }

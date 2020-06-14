@@ -28,11 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnEndTurn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSouth = new System.Windows.Forms.Button();
             this.btn_East = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.timerLabel = new System.Windows.Forms.Label();
+            this.timerKeuken = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,6 +48,7 @@
             this.btnEndTurn.TabIndex = 14;
             this.btnEndTurn.Text = "End turn";
             this.btnEndTurn.UseVisualStyleBackColor = true;
+            this.btnEndTurn.Click += new System.EventHandler(this.btnEndTurn_Click);
             // 
             // label1
             // 
@@ -82,11 +87,37 @@
             this.btn_East.UseVisualStyleBackColor = true;
             this.btn_East.Click += new System.EventHandler(this.btn_WoonNorth_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(614, 379);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Time spent:";
+            // 
+            // timerLabel
+            // 
+            this.timerLabel.AutoSize = true;
+            this.timerLabel.Location = new System.Drawing.Point(682, 379);
+            this.timerLabel.Name = "timerLabel";
+            this.timerLabel.Size = new System.Drawing.Size(0, 13);
+            this.timerLabel.TabIndex = 15;
+            this.timerLabel.Click += new System.EventHandler(this.timerLabel_Click);
+            // 
+            // timerKeuken
+            // 
+            this.timerKeuken.Enabled = true;
+            this.timerKeuken.Interval = 1000;
+            this.timerKeuken.Tick += new System.EventHandler(this.timerKeuken_Tick);
+            // 
             // HiderKeuken
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.timerLabel);
             this.Controls.Add(this.btnEndTurn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -107,5 +138,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnSouth;
         private System.Windows.Forms.Button btn_East;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label timerLabel;
+        private System.Windows.Forms.Timer timerKeuken;
     }
 }
