@@ -16,6 +16,9 @@ namespace HideAndSeek.Views
 	{
 		public TimeSpan RemainingTime { get; set; }
 		private int PlayTime = 0;
+		private int SelectedRoomID = 0;
+		public delegate void Delegate(object sender, EventArgs args);
+		public event Delegate SeekerWon;
 
 		public MapForm()
 		{
@@ -35,7 +38,16 @@ namespace HideAndSeek.Views
 
 		private void btnChoose_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Room Chosen");
+			if (CheckRoom())
+			{
+				Timer.Stop();
+				SeekerWon(this, null);
+				MessageBox.Show("This is the hiding spot! \n Congratulations. You Won!");
+			}
+			else
+			{
+				MessageBox.Show("This was not the hiding spot :( \n Try again!");
+			}
 		}
 
 		private void btnLivingRoomMiddle_Click(object sender, EventArgs e)
@@ -49,6 +61,7 @@ namespace HideAndSeek.Views
 			btnUHall.BackColor = Color.FromKnownColor(KnownColor.Control);
 			btnLivingRoomSouth.BackColor = Color.FromKnownColor(KnownColor.Control);
 			btnChoose.Enabled = true;
+			SelectedRoomID = 5;
 		}
 
 		private void btnCloset_Click(object sender, EventArgs e)
@@ -62,6 +75,7 @@ namespace HideAndSeek.Views
 			btnUHall.BackColor = Color.FromKnownColor(KnownColor.Control);
 			btnLivingRoomSouth.BackColor = Color.FromKnownColor(KnownColor.Control);
 			btnChoose.Enabled = true;
+			SelectedRoomID = 1;
 		}
 
 		private void btnLivingRoomNorth_Click(object sender, EventArgs e)
@@ -75,6 +89,7 @@ namespace HideAndSeek.Views
 			btnUHall.BackColor = Color.FromKnownColor(KnownColor.Control);
 			btnLivingRoomSouth.BackColor = Color.FromKnownColor(KnownColor.Control);
 			btnChoose.Enabled = true;
+			SelectedRoomID = 6;
 		}
 
 		private void btnKitchen_Click(object sender, EventArgs e)
@@ -88,6 +103,7 @@ namespace HideAndSeek.Views
 			btnUHall.BackColor = Color.FromKnownColor(KnownColor.Control);
 			btnLivingRoomSouth.BackColor = Color.FromKnownColor(KnownColor.Control);
 			btnChoose.Enabled = true;
+			SelectedRoomID = 2;
 		}
 
 		private void btnEntryHall_Click(object sender, EventArgs e)
@@ -101,6 +117,7 @@ namespace HideAndSeek.Views
 			btnUHall.BackColor = Color.FromKnownColor(KnownColor.Control);
 			btnLivingRoomSouth.BackColor = Color.FromKnownColor(KnownColor.Control);
 			btnChoose.Enabled = true;
+			SelectedRoomID = 0;
 		}
 
 		private void btnBedroom_Click(object sender, EventArgs e)
@@ -114,6 +131,7 @@ namespace HideAndSeek.Views
 			btnUHall.BackColor = Color.FromKnownColor(KnownColor.Control);
 			btnLivingRoomSouth.BackColor = Color.FromKnownColor(KnownColor.Control);
 			btnChoose.Enabled = true;
+			SelectedRoomID = 3;
 		}
 
 		private void btnUHall_Click(object sender, EventArgs e)
@@ -127,6 +145,7 @@ namespace HideAndSeek.Views
 			btnUHall.BackColor = Color.FromArgb(0, 247, 255);
 			btnLivingRoomSouth.BackColor = Color.FromKnownColor(KnownColor.Control);
 			btnChoose.Enabled = true;
+			SelectedRoomID = 4;
 		}
 
 		private void btnLivingRoomSouth_Click(object sender, EventArgs e)
@@ -140,6 +159,7 @@ namespace HideAndSeek.Views
 			btnUHall.BackColor = Color.FromKnownColor(KnownColor.Control);
 			btnLivingRoomSouth.BackColor = Color.FromArgb(0, 247, 255);
 			btnChoose.Enabled = true;
+			SelectedRoomID = 7;
 		}
 
 		private void Timer_Tick(object sender, EventArgs e)
@@ -153,6 +173,15 @@ namespace HideAndSeek.Views
 			{
 				Timer.Stop();
 			}
+		}
+
+		private bool CheckRoom()
+		{
+			if (SelectedRoomID == MyGlobals.endLocationHider)
+			{
+				return true;
+			}
+			else return false;
 		}
 	}
 }

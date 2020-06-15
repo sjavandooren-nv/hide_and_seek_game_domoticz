@@ -41,6 +41,7 @@ namespace HideAndSeek
 			MapForm form = new MapForm();
 			form.Closed += (s, args) => this.Visible = true;
 			form.RemainingTime = TimeLimit - new TimeSpan(0, 0, 0, 0, PlayTime);
+			form.SeekerWon += (s, args) => Timer.Stop();
 			form.Show();
 		}
 
